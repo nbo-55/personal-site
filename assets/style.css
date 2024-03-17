@@ -1,0 +1,225 @@
+body {
+    line-height: 1.6;
+    padding: 20px;
+    background-color: rgb(188, 253, 255);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.img-hero{
+    display: flex;
+    max-width: 1200px;
+    max-height: 400px;
+}
+
+.resume, .myedu, .myskill, .about, .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.card-resume, .card-myskill, .card-myedu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /**Menambahkan sedikit bayangan untuk estetika */
+    border-radius: 10px; /* Memberikan tepian yang bulat */
+    background-color: #fff; /* Warna latar belakang untuk .card */
+    flex: 0 1 calc(50% - 20px);
+}
+
+@media (max-width: 768px) {
+    .card-resume, .card-myskill, .card-myedu {
+        flex: 0 1 100%; /* Full width cards on small screens */
+        text-wrap: wrap;
+        
+    }
+}
+
+.img-resume{
+    margin-top: 80px;
+    width: 180px; /* Atau sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    margin-top: -50px; /* Opsional, untuk menyesuaikan posisi gambar */
+    border: 3px solid #fff; /* Membuat border putih di sekitar gambar */
+}
+
+.img-myskill, .img-myedu {
+    margin-top: 80px;
+    width: 200px; /* Atau sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    margin-top: 20px; /* Opsional, untuk menyesuaikan posisi gambar */
+    border: 3px solid #fff; /* Membuat border putih di sekitar gambar */
+}
+
+.card-text {
+    font-size: 24px; /* Menyesuaikan ukuran font untuk teks */
+    color: #666; /* Warna teks untuk paragraf */
+    padding: 0 10px; /* Menambahkan padding di kiri dan kanan teks */
+}
+
+.contact{
+    background-color:rgb(188, 253, 255); 
+    text-align: center;  
+}
+
+.btn{
+    background-color: #007bff; /* Warna background biru */
+    color:#fff; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding di dalam button */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    display: inline-block; /* Membuat button berbentuk inline-block */
+    font-size: 20px; /* Ukuran font */
+    font-style: normal;
+    margin: 4px 2px; /* Margin di sekitar button */
+    transition-duration: 0.4s; /* Durasi transisi saat mouse hover */
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse over */
+    border-radius: 5px; /* Membuat tepi button menjadi bulat */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Warna background lebih gelap */
+    color: white; /* Warna teks tetap putih */
+}
+
+.bottom, .bottom-link{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: #666;
+    color:#0056b3;/* Menetapkan warna teks menjadi putih */
+    
+  }
+  
+  /* Jika Anda ingin hanya spesifik link yang berwarna putih dan membedakan style untuk .footer-link, misal */
+  .bottom-link {
+    text-decoration: none; /* Menghilangkan underline pada link */
+  }
+  
+  .bottom-link:hover {
+    color: #cccccc; /* Mengubah warna teks saat di-hover (opsional) */
+  }
+  
+  /* Menetapkan background untuk div.bottom  */
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Jarak atas */
+    padding: 20px; /* Spasi di dalam div */
+  }
+  
+  /* Mengatur copyright */
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px; /* Jarak atas */
+    font-size: 1.5em; /* Ukuran font lebih kecil */
+    color: #0056b3;
+  }
+h1{
+    font-size: 60px;
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: seagreen;
+}
+
+h2{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(12, 117, 65);
+}
+
+h3{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(12, 117, 65);
+}
+/* Responsive font sizes using media queries */
+@media (max-width: 768px) {
+    h2, h3, .card-text, .bottom, .bottom-link, .copyright {
+        font-size: smaller;
+        text-wrap: wrap;    }
+}
+
+.body-contact{
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact{
+    background-color: #10eb22; /* Warna background biru */
+    color:#fff; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding di dalam button */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    display: inline-block; /* Membuat button berbentuk inline-block */
+    font-size: 20px; /* Ukuran font */
+    font-style: normal;
+    margin: 4px 2px; /* Margin di sekitar button */
+    transition-duration: 0.4s; /* Durasi transisi saat mouse hover */
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse over */
+    border-radius: 5px; /* Membuat tepi button menjadi bulat */
+}
+
+.btn-cmbk{
+    background-color: violet; /* Warna background biru */
+    color:#fff; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding di dalam button */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    display: inline-block; /* Membuat button berbentuk inline-block */
+    font-size: 20px; /* Ukuran font */
+    font-style: normal;
+    margin: 4px 2px; /* Margin di sekitar button */
+    transition-duration: 0.4s; /* Durasi transisi saat mouse hover */
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse over */
+    border-radius: 5px; /* Membuat tepi button menjadi bulat */
+}
+.mycontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /**Menambahkan sedikit bayangan untuk estetika */
+    border-radius: 10px; /* Memberikan tepian yang bulat */
+    background-color: #fff; /* Warna latar belakang untuk .card */
+    max-width: 600px;
+}
